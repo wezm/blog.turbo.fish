@@ -1,0 +1,32 @@
+# The URL the site will be built for
+base_url = "https://blog.turbo.fish"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = false
+
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+highlight_theme = "visual-studio-dark"
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+[extra.author]
+name = "Jonas Platte"
+icon_url = "/img/jplatte.png"
+
+[[extra.external_links]]
+title = "sourcehut"
+a_text = "~jplatte"
+a_href = "https://git.sr.ht/~jplatte/"
+
+[[extra.external_links]]
+title = "github"
+a_text = "jplatte"
+a_href = "https://github.com/jplatte"
+
+[[extra.external_links]]
+title = "twitter"
+a_text = "_jplatte"
+a_href = "https://twitter.com/_jplatte"

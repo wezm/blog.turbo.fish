@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'Droid Sans';
+    src: url('DroidSans.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Droid Sans';
+    font-weight: bold;
+    src: url('DroidSans-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Droid Sans Mono';
+    src: url('DroidSansMono.woff') format('woff');
+}
+
+/* Basic layout */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 16.5pt;
+    min-height: 100%;
+    background-color: #111;
+    color: #fff;
+}
+
+pre, .bg {
+    font-family: 'Droid Sans Mono', monospace;
+}
+
+.bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 300px;
+    max-width: 100vw;
+    margin: 0 auto;
+    z-index: -1;
+}
+
+@media screen and (min-width: 1081px) {
+    .bg {
+        left: calc((100vw - 1300px) / 2);
+        right: calc((100vw - 700px) / 2);
+    }
+}
+
+.page {
+    min-height: 100vh;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.content {
+    flex: 1;
+    line-height: 1.3;
+    padding: .5em 2em;
+    background: rgba(29, 29, 29, 0.85);
+}
+
+pre {
+    padding: .5em;
+    border: 1px solid #333;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    color: #fff !important;
+}
+
+h2 a {
+    text-decoration: none;
+}
+
+.sidebar {
+    color: #ccc;
+    padding: 1.5em 2em;
+    background: rgba(23, 23, 23, 0.85);
+}
+
+.author {
+    color: #fff;
+    margin-top: .5em;
+    display: flex;
+    align-items: center;
+}
+
+.author-icon {
+    height: 1em;
+    width: auto;
+    margin-right: .5em;
+}
+
+ul.ext-links {
+    list-style: none;
+    padding-left: 0;
+}
+
+.ext-links li {
+    margin-top: .5em;
+}
+
+.ext-links a {
+    font-size: 90%;
+}
+
+@media screen and (min-width: 791px) {
+    .sidebar {
+        flex: 0 0 300px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .bg {
+        right: 0;
+    }
+
+    .page {
+        flex-direction: column;
+    }
+}
+
+/* Magic */
+t, u, r, b, o, f, i, s, h {
+    display: flex;
+    font-size: 9vh;
+    padding: 1vh;
+    line-height: 1;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+
+    position: relative;
+}
+
+t { margin-left: 49% }
+u { margin-left: 23% }
+r { margin-left: 75% }
+b { margin-left: 29% }
+o { margin-left: 5% }
+f { margin-left: 44% }
+i { margin-left: 63% }
+s { margin-left: 17% }
+h { margin-left: 40% }
+
+t::before, t::after,
+u::before, u::after,
+r::before, r::after,
+b::before, b::after,
+o::before, o::after,
+f::before, f::after,
+i::before, i::after,
+s::before, s::after,
+h::before, h::after {
+    content: '∶';
+    order: -1;
+    display: block;
+}
+
+.reverse t::before, .reverse t::after,
+.reverse u::before, .reverse u::after, .index u::before, .index u::after,
+.reverse r::before, .reverse r::after,
+.reverse b::before, .reverse b::after, .index b::before, .index b::after,
+.reverse o::before, .reverse o::after,
+.reverse f::before, .reverse f::after,
+.reverse i::before, .reverse i::after, .index i::before, .index i::after,
+.reverse s::before, .reverse s::after, .index s::before, .index s::after,
+.reverse h::before, .reverse h::after {
+    order: 1;
+}

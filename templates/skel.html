@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" class="index">
+
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'none';
+    style-src 'self' 'unsafe-inline';
+    frame-src 'none'">
+
+<title>{% block html_title %}{% endblock html_title %}</title>
+
+<link rel="stylesheet" href="/normalize.css">
+<link rel="stylesheet" href="/blog.css">
+
+<div class="page">
+    <main class="content">
+        <h1 class="page-title">{% block page_title %}{% endblock page_title %}</h1>
+        {% block content %}{% endblock content %}
+    </main>
+
+    <aside class="sidebar">
+        <small>This blog is written by</small>
+        <div class="author">
+            <img class="author-icon" src="{{ config.extra.author.icon_url }}" alt="">
+            <span class="author-name">{{ config.extra.author.name }}</span>
+        </div>
+
+        <ul class="ext-links">
+        {% for link in config.extra.external_links %}
+            <li>
+                <small>{{ link.title }}</small><br>
+                <a href="{{ link.a_href }}">{{ link.a_text }}</a>
+            </li>
+        {% endfor %}
+        </ul>
+    </aside>
+</div>
+
+<div class="bg">
+    <t><​></t>
+    <u><​></u>
+    <r><​></r>
+    <b><​></b>
+    <o><​></o>
+    <f><​></f>
+    <i><​></i>
+    <s><​></s>
+    <h><​></h>
+</div>
+
+</html>
