@@ -120,22 +120,19 @@ h2 a {
     margin: .5em 0;
 }
 
-.footnote-definition > p,
-.footnote-definition > pre {
-    display: inline-block;
+.footnote-definition > p {
+    display: inline;
 }
 
 .footnote-definition > :not(.footnote-definition-label) {
     margin-left: .5em;
 }
 
-.footnote-definition > p:nth-child(2),
-.footnote-definition > pre:nth-child(2) {
+.footnote-definition > p:nth-child(2) {
     margin-top: 0;
 }
 
-.footnote-definition > p:last-child,
-.footnote-definition > pre:last-child {
+.footnote-definition > p:last-child {
     margin-bottom: 0;
 }
 
