@@ -13,6 +13,13 @@
 
 @font-face {
     font-family: 'Inter';
+    font-weight: 500;
+    src: url('fonts/Inter-Medium.woff2') format('woff2'),
+         url('fonts/Inter-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter';
     font-weight: 600;
     src: url('fonts/Inter-SemiBold.woff2') format('woff2'),
          url('fonts/Inter-SemiBold.woff') format('woff');
@@ -61,6 +68,11 @@ body {
 h1.page-title {
     font-weight: 600;
     margin-bottom: .3em;
+}
+
+h2 .post-date {
+    font-weight: 500;
+    color: #aaa;
 }
 
 h2, h3, h4 {

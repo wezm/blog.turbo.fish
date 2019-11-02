@@ -3,7 +3,9 @@
 {% block content %}
 <h1>blog.turbo.fish</h1>
 {% for page in section.pages %}
-    <h2><a href="{{ page.permalink }}">{{ page.title }}</a></h2>
-    {{ page.content | safe }}
+    <h2>
+        <a href="{{ page.permalink }}">{{ page.title }}</a>
+        <span class="post-date">· {{ page.date | date(format = "%Y-%m-%d") }}</span>
+    </h2>
 {% endfor %}
 {% endblock content %}
