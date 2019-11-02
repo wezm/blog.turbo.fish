@@ -85,7 +85,7 @@ h1.page-title {
     margin-bottom: .3em;
 }
 
-h2 {
+h2, h3, h4 {
     font-weight: 600;
 }
 
@@ -97,12 +97,12 @@ h2 {
 .content {
     flex: 1;
     line-height: 1.3;
-    padding: .5em 2em;
+    padding: .5em 2em 1.5em;
     background: rgba(29, 29, 29, 0.85);
 }
 
 pre {
-    padding: .5em;
+    padding: .3em .5em;
     border: 1px solid #333;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
@@ -111,8 +111,39 @@ a {
     color: #fff !important;
 }
 
+code {
+    display: inline-block;
+    border: 1px solid #333;
+    background-color: #1e1e1e;
+    color: #569cd6;
+    padding: 0 .2em;
+}
+
 h2 a {
     text-decoration: none;
+}
+
+.footnote-definition {
+    margin: .5em 0;
+}
+
+.footnote-definition > p,
+.footnote-definition > pre {
+    display: inline-block;
+}
+
+.footnote-definition > :not(.footnote-definition-label) {
+    margin-left: .5em;
+}
+
+.footnote-definition > p:nth-child(2),
+.footnote-definition > pre:nth-child(2) {
+    margin-top: 0;
+}
+
+.footnote-definition > p:last-child,
+.footnote-definition > pre:last-child {
+    margin-bottom: 0;
 }
 
 .sidebar {
