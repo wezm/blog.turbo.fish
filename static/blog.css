@@ -1,17 +1,33 @@
 @font-face {
-    font-family: 'Droid Sans';
-    src: url('DroidSans.woff') format('woff');
+    font-family: 'Inter';
+    src: url('fonts/Inter-Regular.woff2') format('woff2'),
+         url('fonts/Inter-Regular.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Droid Sans';
-    font-weight: bold;
-    src: url('DroidSans-Bold.woff') format('woff');
+    font-family: 'Inter';
+    font-style: italic;
+    src: url('fonts/Inter-Italic.woff2') format('woff2'),
+         url('fonts/Inter-Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 600;
+    src: url('fonts/Inter-SemiBold.woff2') format('woff2'),
+         url('fonts/Inter-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 700;
+    src: url('fonts/Inter-Bold.woff2') format('woff2'),
+         url('fonts/Inter-Bold.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Droid Sans Mono';
-    src: url('DroidSansMono.woff') format('woff');
+    src: url('fonts/DroidSansMono.woff') format('woff');
 }
 
 /* Basic layout */
@@ -28,7 +44,7 @@ html {
 }
 
 body {
-    font-family: 'Droid Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 16.5pt;
     min-height: 100%;
     background-color: #111;
@@ -62,6 +78,20 @@ pre, .bg {
     max-width: 1300px;
     margin: 0 auto;
     display: flex;
+}
+
+h1.page-title {
+    font-weight: 600;
+    margin-bottom: .3em;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+.post-meta {
+    display: block;
+    margin-bottom: 2em;
 }
 
 .content {

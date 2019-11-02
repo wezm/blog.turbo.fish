@@ -1,7 +1,7 @@
 {% extends "skel.html" %}
 {% block html_title %}blog.turbo.fish{% endblock html_title %}
-{% block page_title %}blog.turbo.fish{% endblock page_title %}
 {% block content %}
+<h1>blog.turbo.fish</h1>
 {% for page in section.pages %}
     <h2><a href="{{ page.permalink }}">{{ page.title }}</a></h2>
     {{ page.content | safe }}
