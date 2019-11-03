@@ -149,6 +149,8 @@ h2 a {
 }
 
 .sidebar {
+    display: flex;
+    flex-direction: column;
     color: #ccc;
     padding: 1.5em 2em;
     background: rgba(23, 23, 23, 0.85);
@@ -178,6 +180,10 @@ ul.ext-links {
 
 .ext-links a {
     font-size: 90%;
+}
+
+.sidebar-footer {
+    margin-top: auto;
 }
 
 @media screen and (min-width: 791px) {
