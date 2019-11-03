@@ -1,0 +1,23 @@
+image: archlinux
+sources:
+  - https://github.com/jplatte/turbo.fish
+packages:
+  - rust
+  - wget
+secrets:
+  - 3d68c1a1-174a-49be-b03b-af1a5d4bbd99
+tasks:
+  - download_zola: |
+      archive='zola-v0.9.0-x86_64-unknown-linux-gnu.tar.gz'
+      wget "https://github.com/getzola/zola/releases/download/v0.9.0/$archive"
+      tar xf "$archive"
+  - deploy: |
+      PATH="$PATH:$PWD"
+      cd blog.turbo.fish
+      bash deploy.sh
+  # Links can break in old articles. This should be checked in CI, but should
+  # not break publishing new articles, so it is done after deploying the site.
+  - check_links: |
+      PATH="$PATH:$PWD"
+      cd blog.turbo.fish
+      zola check
