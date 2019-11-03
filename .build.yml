@@ -14,6 +14,10 @@ tasks:
   - deploy: |
       PATH="$PATH:$PWD"
       cd blog.turbo.fish
+
+      # Since we push to GitHub, we need a git identity
+      git config --global user.email "noreply@turbo.fish"
+      git config --global user.name "the turbofish"
       bash deploy.sh
   # Links can break in old articles. This should be checked in CI, but should
   # not break publishing new articles, so it is done after deploying the site.
