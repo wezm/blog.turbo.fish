@@ -1,11 +1,13 @@
 {% extends "skel.html" %}
 {% block html_title %}blog.turbo.fish{% endblock html_title %}
 {% block content %}
-<h1>blog.turbo.fish</h1>
-{% for page in section.pages %}
-    <h2>
-        <a href="{{ page.permalink }}">{{ page.title }}</a>
-        <span class="post-date">· {{ page.date | date(format = "%Y-%m-%d") }}</span>
-    </h2>
-{% endfor %}
+<main>
+    <h1>blog.turbo.fish</h1>
+    {% for page in section.pages %}
+        <h2>
+            <a href="{{ page.permalink }}">{{ page.title }}</a>
+            <span class="post-date">· {{ page.date | date(format = "%Y-%m-%d") }}</span>
+        </h2>
+    {% endfor %}
+</main>
 {% endblock content %}
