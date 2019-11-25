@@ -30,3 +30,13 @@ a_href = "https://github.com/jplatte"
 title = "twitter"
 a_text = "_jplatte"
 a_href = "https://twitter.com/_jplatte"
+
+[[extra.external_links]]
+title = "twitch"
+a_text = "jplatte"
+a_href = "https://www.twitch.tv/jplatte"
+
+[[extra.external_links]]
+title = "liberapay"
+a_text = "jplatte"
+a_href = "https://liberapay.com/jplatte/"
