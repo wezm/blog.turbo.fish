@@ -42,6 +42,10 @@
             <span class="author-name">{{ config.extra.author.name }}</span>
         </div>
 
+        <div class="about">
+            {{ config.extra.about | markdown | safe }}
+        </div>
+
         <ul class="ext-links">
         {% for link in config.extra.external_links %}
             <li>

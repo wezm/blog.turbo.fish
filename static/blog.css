@@ -169,11 +169,17 @@ h2 a {
     margin-right: .5em;
 }
 
+.about {
+    font-size: 90%;
+    color: #ddd;
+    margin-top: .5em;
+}
+
 ul.ext-links {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    margin-top: 1.5em;
+    margin-top: .25em;
     padding-left: 0;
 }
 

@@ -12,6 +12,15 @@ highlight_theme = "visual-studio-dark"
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
+[extra]
+about = """
+I am the creator of the web­site [turbo.fish][]. You may also know me
+because of my involvement with the [ruma][] project.
+
+[turbo.fish]: https://turbo.fish/
+[ruma]: https://www.ruma.io/
+"""
+
 [extra.author]
 name = "Jonas Platte"
 icon_url = "/img/jplatte.png"
