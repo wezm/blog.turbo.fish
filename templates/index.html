@@ -5,7 +5,7 @@
     <h1>blog.turbo.fish</h1>
     {% for page in section.pages %}
         <h2>
-            <a href="{{ page.permalink }}">{{ page.title }}</a>
+            <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
             <span class="post-date">· {{ page.date | date(format = "%Y-%m-%d") }}</span>
         </h2>
     {% endfor %}
