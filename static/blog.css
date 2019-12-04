@@ -70,9 +70,14 @@ h1.page-title {
     margin-bottom: .3em;
 }
 
-h2 .post-date {
+h2.post-entry {
     font-weight: 500;
+}
+
+h2.post-entry time {
+    font-weight: 400;
     color: #aaa;
+    white-space: nowrap;
 }
 
 h2, h3, h4 {

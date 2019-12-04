@@ -4,9 +4,10 @@
 <main>
     <h1>blog.turbo.fish</h1>
     {% for page in section.pages %}
-        <h2>
+        {% set iso_date = page.date | date(format = '%Y-%m-%d') %}
+        <h2 class="post-entry">
             <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
-            <span class="post-date">· {{ page.date | date(format = "%Y-%m-%d") }}</span>
+            <time datetime="{{ iso_date }}">· {{ iso_date }}</time>
         </h2>
     {% endfor %}
 </main>
