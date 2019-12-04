@@ -105,6 +105,11 @@ h2, h3, h4 {
     right: 0;
     z-index: -1;
     overflow-y: hidden;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 pre {
