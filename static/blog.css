@@ -158,6 +158,25 @@ h2 a {
     margin-bottom: 0;
 }
 
+.other-post-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 2em 0 0;
+}
+
+.next-post {
+    margin-left: auto;
+}
+
+.other-post-links small {
+    color: #ccc;
+}
+
+.other-post-links a {
+    display: block;
+}
+
 .sidebar {
     display: flex;
     flex-direction: column;
