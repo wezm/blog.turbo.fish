@@ -102,6 +102,11 @@ h2, h3, h4 {
     background: rgba(29, 29, 29, 0.9);
 }
 
+.content img {
+    max-width: 100%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
 .bg {
     position: absolute;
     top: 0;
