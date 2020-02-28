@@ -148,8 +148,19 @@ h2 a {
     text-decoration: none;
 }
 
+/* First footnote ::before */
+p + .footnote-definition::before {
+    content: 'Footnotes';
+    display: block;
+    color: #ccc;
+    margin: 2em 0 .3em;
+    /* Very very very close to the size of 'Previous post' / 'Next post' */
+    font-size: 88.89%;
+}
+
 .footnote-definition {
     margin: .5em 0;
+    font-size: 90%;
 }
 
 .footnote-definition > p {
